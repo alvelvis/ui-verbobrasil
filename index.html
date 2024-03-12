@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Verbo-Brasil</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+  </head>
+  <body>
+
+    <div class="container-fluid">
+	<div class="row">
+		<div class="col-md-12">
+			<div class="jumbotron">
+				<h2>
+					Verbo-Brasil
+				</h2>
+			</div>
+			<form role="form">
+				<div class="form-group">
+					 
+					<label>
+						Verbo:
+					</label>
+					<input type="text" class="form-control" id="frames" value=".*">
+					<hr>
+				</div>
+				<div class="form-group">
+					 
+					<label>
+						Argumentos:
+					</label>
+					<input type="text" class="form-control" id="args" value=".*">
+					<br><label>Busca negativa: <input type="checkbox" id="args_neg"></label>
+					<hr>
+				</div>
+				<div class="form-group">
+					 
+					<label>
+						Papéis:
+					</label>
+					<input type="text" class="form-control" id="roles" value=".*">
+					<br><label>Busca negativa: <input type="checkbox" id="roles_neg"></label>
+					<hr>
+				</div>
+				
+				<button type="submit" class="btn btn-primary" id="go">
+					Pesquisar
+				</button>
+				<p id="loading" style="display:none">Carregando...</p>
+			</form>
+		</div>
+	</div>
+	<hr>
+	<div class="row">
+		<div class="col-md-12">
+			<dl id="results" style="display:none">
+				<dt>
+					Resultados
+				</dt>
+				<dd>
+					A description list is perfect for defining terms.
+				</dd>
+				<dt>
+					Euismod
+				</dt>
+				<dd>
+					Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.
+				</dd>
+				<dd>
+					Donec id elit non mi porta gravida at eget metus.
+				</dd>
+				<dt>
+					Malesuada porta
+				</dt>
+				<dd>
+					Etiam porta sem malesuada magna mollis euismod.
+				</dd>
+				<dt>
+					Felis euismod semper eget lacinia
+				</dt>
+				<dd>
+					Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+				</dd>
+			</dl>
+		</div>
+	</div>
+</div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+	<script src="js/utils.js"></script>
+	<script src="frames.js"></script>
+  </body>
+</html>
