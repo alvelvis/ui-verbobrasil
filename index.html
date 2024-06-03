@@ -16,10 +16,17 @@
     <div class="container-fluid">
 	<div class="row">
 		<div class="col-md-12">
-			<div class="jumbotron">
+			<div class="jumbotron" style="margin-top:20px; padding:20px">
 				<h2>
 					Verbo-Brasil
 				</h2>
+				A interface permite realizar buscas complexas nas entradas do Verbo Brasil.
+				<br>As buscas podem ser por Verbo, Argumentos ou Papéis, e podem ser negativas, isto é, quando se procura por uma entrada que *não* contenha a informação especificada.
+				<br>Todos os campos aceitam expressões regulares.
+				<br><br>Exemplos de uso:
+				<br>- Verbo: ab.*, Argumentos: Arg2 - todos os verbos iniciados por Ab e que tenham um Arg2
+				<br>- Verbo: ab.*, Argumentos: Arg2 (busca negativa) - todos os verbos iniciados por Ab que não tenham um Arg2 especificado
+				<br>- Verbo: .*, Argumentos: .*, Papéis: valor|quantidade - todos os verbos que tenham um papel de valor ou de quantidade
 			</div>
 			<form role="form">
 				<div class="form-group">
@@ -90,6 +97,8 @@
 			</dl>
 		</div>
 	</div>
+	<hr>Desenvolvido por <a href='https://souelvis.dev' target="_blank">Elvis A. de Souza</a> em 2023.
+	<br><img src="https://souelvis.dev/ui-verbobrasil/imgs/logos.png" style="height:150px;">
 </div>
 
     <script src="js/jquery.min.js"></script>
